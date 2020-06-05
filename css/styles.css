@@ -1,0 +1,12 @@
+.jumbotron h2 {
+  text-decoration: underline;
+}
+
+.jumbotron p {
+  font-size: 15px;
+}
+
+.jumbotron {
+  background-color: #dc143c;
+  color: #008F18
+}
