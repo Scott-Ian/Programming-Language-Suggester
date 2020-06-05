@@ -1,12 +1,19 @@
 .jumbotron h2 {
   text-decoration: underline;
+  color:#9A89D9;
 }
 
 .jumbotron p {
   font-size: 15px;
+  color: #403959;
 }
 
 .jumbotron {
-  background-color: #dc143c;
-  color: #008F18
+  background-color: rgb(28, 26, 38, 0.7);
+}
+
+body {
+  background-color: #6872A6;
+  background-image: url("../img/Planet\ Steam.png");
+  background-repeat: no-repeat;
 }
