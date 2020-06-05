@@ -18,8 +18,10 @@ p {
 
 body {
   background-image: url("../img/Planet\ Steam.png");
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: fixed;
+  background-size: cover;
 }
 
 h4 {
