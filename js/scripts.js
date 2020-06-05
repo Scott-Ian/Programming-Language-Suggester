@@ -52,7 +52,7 @@ const hideSecrets = function () {
 
 // Ensures all form inputs have data
 const allAnswered = function (response1, response2, response3, response4, response5) {
-  if (response1 === undefined || response2 === undefined || response3 === undefined || response4 === undefined || response5 === undefined ) {
+  if (response1 === undefined || response2 === undefined || response3 === "") {
     return false;
   } else {
     return true;
@@ -69,7 +69,7 @@ $("document").ready(function() {
     const favColor = $("#color").val();
     const queensResponse = parseInt($("#queens").val());
 
-    console.log(ophidiophobiaStatus);
+    console.log(airSpeedResponse);
     
     hideSecrets();
 
