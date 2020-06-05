@@ -1,41 +1,37 @@
-# _{Application Name}_
+# _Which Programming Language Should You Learn?_ 
+_A programming language suggester_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _A short questionaire that suggests a user learn one of three programming languages, June 5, 2020_
 
-#### By _**{List of contributors}**_
+#### By _**Ian Scott**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This website asks the user five questions, and based on the response, reccomends learning one of three programming languages. Only the first two questions determine the language, the other three are just for laughs, and each have a secret result for a specific response._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone this repository located at: https://github.com/Scott-Ian/Programming-Language-Suggester.git_
+* _Open index.html located in the main branch of the repository using your preferred web browser_
+* _An internet connection is reccomended to experience all secret results, but not required_
+* _Alternatively you can visit https://scott-ian.github.io/Programming-language-Suggester_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_There are no known bugs. However, the scripts.js could be slightly simplified. By adjusting the hideSecrets function (lines 47 and 72) to also hide all possible results, I would not have needed to include the hideOtherResults (line 18) function, nor reference it in the languageEval(lines 2-15) function. However, I wanted to practice factoring functions when possible._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_If you have any questions, run into any issues or bugs, or if you would like to contribute to this project, please contact me at: chesnekov@gmail.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_This project utilizes HTML, CSS, and Bootstrap v.3.3.7. This project also utilizes several form inputs and logical branching._
+
+### Attributions
+_The background image is from the Symphonoologie at The Louvre, as posted by Jonathan Kim on Behance. Please visit the following link for more information https://www.behance.net/gallery/91240491/Symphonologie-at-The-Louvre_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-
-https://choosealicense.com/
-https://en.wikipedia.org/wiki/MIT_License
-https://en.wikipedia.org/wiki/GNU_General_Public_License
-
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2020 **_Ian Scott_** This website is licensed under the MIT license.
