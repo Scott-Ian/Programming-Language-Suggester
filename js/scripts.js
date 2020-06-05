@@ -1,6 +1,6 @@
 // Gives a language reccomendation based on first two form responses
 const languageEval = function (snakeFear, rigidity) {
-  if (snakeFear) {
+  if (snakeFear === "true") {
     if (rigidity === 3) {
       hideOtherResults("cSharp");
       $("#csharp").show();
@@ -34,11 +34,11 @@ const displayBonusResults = function (airSpeed, favColor, queenCount) {
     $("#monty-python").show();
   }
 
-  if (favColor === "black") {
+  if (favColor === "#000000") {
     $("#henry-ford").show();
   }
 
-  if (queenCount === 2) {
+  if (queenCount === 8) {
     $("#smart").show();
   }
 }
@@ -46,7 +46,7 @@ const displayBonusResults = function (airSpeed, favColor, queenCount) {
 // Hides all secret results
 const hideSecrets = function () {
   $("#monty-python").hide();
-  $("#henry-ford:").hide();
+  $("#henry-ford").hide();
   $("#smart").hide();
 }
 
@@ -55,13 +55,13 @@ $("document").ready(function() {
   $("form#programmingQuiz").submit(function(event) {
     event.preventDefault();
 
-    const ophidiophobiaStatus = JSON.parse($("input:radio[name=ophidiophobia]:checked").val());
+    const ophidiophobiaStatus =$("input:radio[name=ophidiophobia]:checked").val();
     const rigidityValue = parseInt(($("input:radio[name=rigidity]:checked").val()));
     const airSpeedResponse = $("input#airSpeed").val();
     const favColor = $("#color").val();
     const queensResponse = parseInt($("#queens").val());
     
-    console.log(favColor);
+    hideSecrets();
 
     languageEval(ophidiophobiaStatus, rigidityValue);
 
