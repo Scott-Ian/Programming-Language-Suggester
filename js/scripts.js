@@ -51,7 +51,7 @@ const hideSecrets = function () {
 }
 
 // Ensures all form inputs have data
-const allAnswered = function (response1, response2, response3, response4, response5) {
+const allAnswered = function (response1, response2, response3) {
   if (response1 === undefined || response2 === undefined || response3 === "") {
     return false;
   } else {

@@ -14,6 +14,10 @@ p {
   text-align: center;
 }
 
+.radio {
+  color: #6872A6;
+}
+
 .jumbotron {
   background-color: rgb(28, 26, 38, 0.7);
 }
