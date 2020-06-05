@@ -1,3 +1,19 @@
+// Gives a language reccomendation based on first two form responses
+const languageEval = function (snakeFear, rigidity) {
+  if (snakeFear) {
+    if (rigidity === 3) {
+      hideOtherResults("cSharp");
+      $("#csharp").show();
+    } else {
+      hideOtherResults("javaScript");
+      $("#javascript").show();
+    }
+  } else {
+    hideOtherResults("python");
+    $("#python").show();
+  }
+}
+
 // Ensures all other possible language results are hidden when form is submitted in event of consecutive form submissions
 const hideOtherResults = function (language) {
   if (language === "javaScript") {
@@ -23,17 +39,6 @@ $("document").ready(function() {
     const favColor = $("#color").val();
     const queensResponse = parseInt($("#queens").val());
 
-    if (ophidiophobiaStatus) {
-      if (rigidityValue === 3) {
-        hideOtherResults("cSharp");
-        $("#csharp").show();
-      } else {
-        hideOtherResults("javaScript");
-        $("#javascript").show();
-      }
-    } else {
-      hideOtherResults("python");
-      $("#python").show();
-    }
+    languageEval(ophidiophobiaStatus, rigidityValue);
   });
 });
