@@ -50,6 +50,14 @@ const hideSecrets = function () {
   $("#smart").hide();
 }
 
+// Ensures all form inputs have data
+const allAnswered = function (response1, response2, response3, response4, response5) {
+  if (response1 === undefined || response2 === undefined || response3 === undefined || response4 === undefined || response5 === undefined ) {
+    return false;
+  } else {
+    return true;
+  }
+}
 
 $("document").ready(function() {
   $("form#programmingQuiz").submit(function(event) {
@@ -60,11 +68,16 @@ $("document").ready(function() {
     const airSpeedResponse = $("input#airSpeed").val();
     const favColor = $("#color").val();
     const queensResponse = parseInt($("#queens").val());
+
+    console.log(ophidiophobiaStatus);
     
     hideSecrets();
 
-    languageEval(ophidiophobiaStatus, rigidityValue);
-
-    displayBonusResults(airSpeedResponse, favColor, queensResponse);
+    if (allAnswered (ophidiophobiaStatus, rigidityValue, airSpeedResponse, favColor, queensResponse)) {
+      languageEval(ophidiophobiaStatus, rigidityValue);
+      displayBonusResults(airSpeedResponse, favColor, queensResponse);
+    } else {
+      alert("Please answer all questions before submitting!");
+    }
   });
 });
