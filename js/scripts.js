@@ -68,8 +68,6 @@ $("document").ready(function() {
     const airSpeedResponse = $("input#airSpeed").val();
     const favColor = $("#color").val();
     const queensResponse = parseInt($("#queens").val());
-
-    console.log(airSpeedResponse);
     
     hideSecrets();
 
