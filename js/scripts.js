@@ -9,6 +9,14 @@ $("document").ready(function() {
     const favColor = $("#color").val();
     const queensResponse = parseInt($("#queens").val());
 
-
+    if (ophidiophobiaStatus) {
+      if(rigidityValue === 3) {
+        $("#csharp").show();
+      } else {
+        $("#javascript").show();
+      }
+    } else {
+      $("#python").show();
+    }
   });
 });

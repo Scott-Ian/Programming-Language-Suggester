@@ -64,15 +64,15 @@ float: left;
   color: #9A89D9
 }
 
-.javascript{
+#javascript{
   display: none;
 }
 
-.csharp {
+#csharp {
   display: none;
 }
 
-.python {
+#python {
   display: none;
 }
 
