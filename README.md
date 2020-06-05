@@ -14,7 +14,7 @@ _This website asks the user five questions, and based on the response, reccomend
 * _Clone this repository located at: https://github.com/Scott-Ian/Programming-Language-Suggester.git_
 * _Open index.html located in the main branch of the repository using your preferred web browser_
 * _An internet connection is reccomended to experience all secret results, but not required_
-* _Alternatively you can visit https://scott-ian.github.io/Programming-language-Suggester_
+* _Alternatively you can visit scott-ian.github.io/Programming-language-Suggester_
 
 
 ## Known Bugs
