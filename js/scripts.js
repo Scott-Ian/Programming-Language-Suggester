@@ -28,6 +28,28 @@ const hideOtherResults = function (language) {
   }
 }
 
+// Displays relevent bonus results depending on form response
+const displayBonusResults = function (airSpeed, favColor, queenCount) {
+  if (airSpeed === "African or European?") {
+    $("#monty-python").show();
+  }
+
+  if (favColor === "black") {
+    $("#henry-ford").show();
+  }
+
+  if (queenCount === 2) {
+    $("#smart").show();
+  }
+}
+
+// Hides all secret results
+const hideSecrets = function () {
+  $("#monty-python").hide();
+  $("#henry-ford:").hide();
+  $("#smart").hide();
+}
+
 
 $("document").ready(function() {
   $("form#programmingQuiz").submit(function(event) {
@@ -38,7 +60,11 @@ $("document").ready(function() {
     const airSpeedResponse = $("input#airSpeed").val();
     const favColor = $("#color").val();
     const queensResponse = parseInt($("#queens").val());
+    
+    console.log(favColor);
 
     languageEval(ophidiophobiaStatus, rigidityValue);
+
+    displayBonusResults(airSpeedResponse, favColor, queensResponse);
   });
 });
