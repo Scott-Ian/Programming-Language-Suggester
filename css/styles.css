@@ -30,6 +30,12 @@ h4 {
 float: left;
 } 
 
+.intro-images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .intro-images img {
   display: block;
   margin-left: auto;
@@ -40,5 +46,6 @@ float: left;
 
 #middleimage {
   margin-left: 15%;
+  margin-right: 5%;
 }
 
