@@ -19,8 +19,26 @@ p {
 body {
   background-image: url("../img/Planet\ Steam.png");
   background-repeat: no-repeat;
+  background-position: fixed;
 }
 
 h4 {
   color: #9A89D9;
 }
+
+.first2images {
+float: left;
+} 
+
+.intro-images img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20%;
+  max-height: auto;
+}
+
+#middleimage {
+  margin-left: 15%;
+}
+
