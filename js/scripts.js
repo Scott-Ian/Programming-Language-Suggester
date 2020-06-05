@@ -1,4 +1,4 @@
-// Ensures all other possible language results are hidden when form is submitted in event of multiple form submissions
+// Ensures all other possible language results are hidden when form is submitted in event of consecutive form submissions
 const hideOtherResults = function (language) {
   if (language === "javaScript") {
     $("#csharp").hide();
@@ -24,7 +24,7 @@ $("document").ready(function() {
     const queensResponse = parseInt($("#queens").val());
 
     if (ophidiophobiaStatus) {
-      if(rigidityValue === 3) {
+      if (rigidityValue === 3) {
         hideOtherResults("cSharp");
         $("#csharp").show();
       } else {

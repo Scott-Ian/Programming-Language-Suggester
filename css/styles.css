@@ -51,7 +51,7 @@ float: left;
   margin-right: 5%;
 }
 
-.resultimg {
+.results img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -64,7 +64,7 @@ float: left;
   color: #9A89D9
 }
 
-#javascript{
+#javascript {
   display: none;
 }
 
@@ -76,3 +76,14 @@ float: left;
   display: none;
 }
 
+#monty-python {
+  display: none;
+}
+
+#henry-ford {
+  display: none;
+}
+
+#smart {
+  display: none;
+}
